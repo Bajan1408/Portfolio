@@ -20,7 +20,8 @@
     flex-direction: row;
     font-size: 1.125rem;
     font-weight: 700;
-    margin-bottom: .5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .portfolio li .title.github::before {
@@ -32,16 +33,4 @@
     background-size: contain;
     background-image: url('/assets/img/icons/github.svg');
     margin-right: .125rem;
-}
-
-
-.portfolio li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.6rem;
-    margin-bottom: .5rem;
-}
-
-.portfolio li a:hover {
-    text-decoration: underline;
 }
