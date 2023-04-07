@@ -1,9 +1,5 @@
 
 function updateProfileInfo (profileData) {
-    /*const photo = document.getElementById('profile.photo');
-    photo.src = profileData.photo;
-    photo.alt = profileData.name; */
-
     const name = document.getElementById('profile.name');
     name.innerText = profileData.name;
 
@@ -14,11 +10,17 @@ function updateProfileInfo (profileData) {
     location.innerText = profileData.location;
 
     const phone = document.getElementById('profile.phone');
-    phone.innerText = `tel: ${profileData.phone}`;
+    phone.innerText = profileData.phone;
+    phone.href = `tel: ${profileData.phone}`;
 
     const mail = document.getElementById('profile.mail');
-    name.innerText = `mailto: ${profileData.mail}`;
+    mail.innerText = profileData.mail;
+    mail.href = `mailto: ${profileData.mail}`;
+}
 
+function updataSoftSkills (profileData) {
+    const softSkilss = document.getElementById('profile.skills.softSkills');
+    softSkilss.innerHTML = profileData.skills.softSkills.map((skill) => `<li>${skill}</li>`).join('');
 }
 
 (async () => {
@@ -26,4 +28,5 @@ function updateProfileInfo (profileData) {
     console.log(profileData);
 
     updateProfileInfo(profileData);
+    updataSoftSkills(profileData);
 })()
