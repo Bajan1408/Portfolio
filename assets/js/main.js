@@ -25,7 +25,6 @@ function updataSoftSkills (profileData) {
 
 (async () => {
     const profileData = await fetchProfileData();
-    console.log(profileData);
 
     updateProfileInfo(profileData);
     updataSoftSkills(profileData);
