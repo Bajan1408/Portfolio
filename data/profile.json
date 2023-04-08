@@ -9,15 +9,19 @@
       "hardSkills": [
         {
           "nome": "javascript",
-          "logo": "TODO"
+          "logo": "https://github.com/Bajan1408/Portfolio/blob/main/data/img/js.png"
         },
         {
-          "nome": "Java",
-          "logo": "TODO"
+          "nome": "html",
+          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/html.png"
         },
         {
-          "nome": "Kotlin",
-          "logo": "TODO"
+          "nome": "git",
+          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/git.png"
+        },
+        {
+          "nome": "CSS",
+          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/css.png"
         }
       ],
       "softSkills": [
