@@ -35,4 +35,6 @@ function updateHardSkills (profileData) {
     updateProfileInfo(profileData);
     updateSoftSkills(profileData);
     updateHardSkills(profileData);
+
 })()
+
