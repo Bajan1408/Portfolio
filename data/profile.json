@@ -16,12 +16,16 @@
           "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/html.png"
         },
         {
+          "nome": "CSS",
+          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/css.png"
+        },
+        {
           "nome": "git",
           "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/git.png"
         },
         {
-          "nome": "CSS",
-          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/css.png"
+          "nome": "github",
+          "logo": "https://raw.githubusercontent.com/Bajan1408/Portfolio/main/data/img/github.png"
         }
       ],
       "softSkills": [
