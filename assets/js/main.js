@@ -29,6 +29,12 @@ function updateHardSkills (profileData) {
     <img src="${skill.logo}" alt="javascript" title="${skill.nome}"></li>`).join('');
 }
 
+function updatePortfolio (profileData) {
+    const portfolio = document.getElementById('profile.portfolio');
+    portfolio.innerHTML = profileData.portfolio.map((job) => `<span class="title github">${job.nome}</span>
+    <a href="${job.gitHub}" target="_blank">${job.certificado}</a>`)
+}
+
 
 (async () => {
     const profileData = await fetchProfileData();
@@ -36,6 +42,7 @@ function updateHardSkills (profileData) {
     updateProfileInfo(profileData);
     updateSoftSkills(profileData);
     updateHardSkills(profileData);
+    updatePortfolio(profileData);
 
 })()
 
