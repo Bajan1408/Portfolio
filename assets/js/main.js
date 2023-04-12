@@ -31,13 +31,13 @@ function updateHardSkills (profileData) {
 
 function updateLanguage (profileData) {
     const languages = document.getElementById('profile.languages');
-    languages.innerHTML = profileData.languages.map((lang) => `<li>${lang}</li>`);
+    languages.innerHTML = profileData.languages.map((lang) => `<li>${lang}</li>`).join('');
 }
 
 function updatePortfolio (profileData) {
     const portfolio = document.getElementById('profile.portfolio');
-    portfolio.innerHTML = profileData.portfolio.map((job) => `<span class="title github">${job.nome}</span>
-    <a href="${job.gitHub}" target="_blank">${job.certificado}</a>`)
+    portfolio.innerHTML = profileData.portfolio.map((job) => `<h3 ${profile.gitHub ? 'class="github"' : ''}>${job.nome}</h3>
+    <a href="${job.certificado}" target="_blank">${job.repositorio}</a>`).join('');
 }
 
 
@@ -47,7 +47,7 @@ function updatePortfolio (profileData) {
     updateProfileInfo(profileData);
     updateSoftSkills(profileData);
     updateHardSkills(profileData);
-   // updatePortfolio(profileData);
+    updatePortfolio(profileData);
     updateLanguage(profileData);
 
 })()
