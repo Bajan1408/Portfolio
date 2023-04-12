@@ -36,7 +36,7 @@ function updateLanguage (profileData) {
 
 function updatePortfolio (profileData) {
     const portfolio = document.getElementById('profile.portfolio');
-    portfolio.innerHTML = profileData.portfolio.map((job) => `<h3 ${profile.gitHub ? 'class="github"' : ''}>${job.nome}</h3>
+    portfolio.innerHTML = profileData.portfolio.map((job) => `<h3 ${job.gitHub ? 'class="github"' : ''}>${job.nome}</h3>
     <a href="${job.certificado}" target="_blank">${job.repositorio}</a>`).join('');
 }
 
