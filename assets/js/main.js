@@ -45,7 +45,7 @@ function updatePortfolio (profileData) {
 
 function updateExperience (profileData) {
     const experience = document.getElementById('profile.profExp.name');
-    experience.innerHTML = profileData.experience.map((exp) =>
+    experience.innerHTML = profileData.experiencias.map((exp) =>
        `<li>
            <h3 class="experience" >${exp.nome}</h3>
            <p class="period">j${exp.periodo}</p>
