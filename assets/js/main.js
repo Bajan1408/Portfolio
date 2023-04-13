@@ -42,7 +42,7 @@ function updatePortfolio (profileData) {
     <a href="${job.certificado}" target="_blank">${job.repositorio}</a>
     </li>`).join('');
 }
-
+/*
 function updateExperience (profileData) {
     const experience = document.getElementById('profile.profExp.name');
     experience.innerHTML = profileData.experience.map((exp) => `
@@ -51,7 +51,7 @@ function updateExperience (profileData) {
            <p class="period">${exp.periodo}</p>
            <p>${exp.descricao}</p>  
         </li>`).join('');  
-}
+} */
 
 
 (async () => {
@@ -62,7 +62,7 @@ function updateExperience (profileData) {
     updateHardSkills(profileData);
     updateLanguage(profileData);
     updatePortfolio(profileData); 
-    updateExperience(profileData); 
+    //updateExperience(profileData); 
 
 })();
 
